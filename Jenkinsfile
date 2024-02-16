@@ -1,5 +1,6 @@
 node {
-    stage('Build') {
-        //echo 'Building....'
+    stage("Build") {
+        bat "cd JUnitWithMaven"
+        bat "mvn test"
     }
 }
