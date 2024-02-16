@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                bat "cd JUnitWithMaven"
+                bat "cd JUntitWithMaven"
                 bat "mvn test"
             }
         }
