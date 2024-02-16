@@ -1,6 +1,11 @@
-node {
-    stage("Build") {
-        bat "cd JUnitWithMaven"
-        bat "mvn test"
-    }
+pipeline {
+    agent any
+
+    stages {
+        stage('Build') {
+            steps {
+                bat "cd JUnitWithMaven"
+                bat "mvn test"
+            }
+        }
 }
