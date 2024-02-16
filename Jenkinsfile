@@ -6,6 +6,7 @@ pipeline {
             steps {
                 dir("JUnitWithMaven"){
                     bat "mvn test"
+                    echo "hello testing"
                 }
             }
         }
