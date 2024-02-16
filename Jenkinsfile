@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage ("use dir") {
             steps {
-                dir("JUnitTestingMaven"){
+                dir("JUnitWithMaven"){
                     bat "mvn test"
                 }
             }
