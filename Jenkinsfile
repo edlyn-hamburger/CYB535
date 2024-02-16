@@ -2,10 +2,11 @@ pipeline {
     agent any
 
     stages {
-        stage("Build") {
+        stage ("use dir") {
             steps {
-                bat "cd JUntitWithMaven"
-                bat "mvn test"
+                dir("JUnitTestingMaven"){
+                    bat "mvn test"
+                }
             }
         }
     }
