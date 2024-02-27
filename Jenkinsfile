@@ -12,8 +12,8 @@ pipeline {
 
                 dir("PythonTests")
                 {
-                    bat "cd Python Unit Tests"
-                    bat "python -m unittest test_MathUtils.py"
+                    bat "python -m unittest test_mathUtils.py"
+                    echo "hello Im in Python"
                 }
             }
         }
