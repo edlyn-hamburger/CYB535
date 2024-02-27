@@ -4,9 +4,16 @@ pipeline {
     stages {
         stage ("use dir") {
             steps {
-                dir("JUnitWithMaven"){
+                dir("JUnitWithMaven")
+                {
                     bat "mvn test"
-                    echo "hello testing"
+                    echo "hello Im in Java"
+                }
+
+                dir("PythonTests")
+                {
+                    bat "cd Python Unit Tests"
+                    bat "python -m unittest test_MathUtils.py"
                 }
             }
         }
