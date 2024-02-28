@@ -7,14 +7,14 @@ pipeline {
                 dir("JUnitWithMaven")
                 {
                     bat "mvn test"
-                    echo "hello Im in Java"
+                    //echo "hello Im in Java"
                 }
 
                 dir("PythonTests")
                 {
                     bat "python -m unittest test_mathUtils.py"
-                    echo "hello Im in Python"
-                    //echo "github webhook push test"
+                    //echo "hello Im in Python"
+                    echo "Jenkins is now automated! :)"
                 }
             }
         }
