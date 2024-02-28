@@ -14,6 +14,7 @@ pipeline {
                 {
                     bat "python -m unittest test_mathUtils.py"
                     echo "hello Im in Python"
+                    echo "github webhook push test"
                 }
             }
         }
