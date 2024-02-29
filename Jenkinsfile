@@ -15,7 +15,7 @@ pipeline {
                     bat "python -m unittest test_mathUtils.py"
                     echo "hello Im in Python"
                     echo "Jenkins is now automated! :)"
-                    echo "ngrok url"
+                    //echo "ngrok url"
                 }
             }
         }
