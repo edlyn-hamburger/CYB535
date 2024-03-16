@@ -9,21 +9,21 @@ public class mathUtilsTest {
     mathUtils m1 = new mathUtils();
 
     @Test
-    void add()
+    public void add()
     {
         int add = m1.add(4, 8);
         assertEquals (12, add); 
     }
 
     @Test
-    void sub()
+    public void sub()
     {
         int sub = m1.sub(10, 4);
         assertEquals(6, sub); 
     }
 
     @Test
-    void mult()
+    public void mult()
     {
         int mult = m1.mult(2, 4);
         assertEquals(8, mult);
@@ -31,7 +31,7 @@ public class mathUtilsTest {
 
     @SuppressWarnings("deprecation")
     @Test
-    void div()
+    public void div()
     {
         double div = m1.div(50, 10);
         assertEquals(5, div); 
