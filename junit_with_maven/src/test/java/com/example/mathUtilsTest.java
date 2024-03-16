@@ -33,7 +33,7 @@ public class mathUtilsTest {
     @Test
     void div()
     {
-        double div = m1.div(20, 4);
+        double div = m1.div(50, 10);
         assertEquals(5, div); 
     }
     
