@@ -1,3 +1,4 @@
+//ngrok http --domain=noble-national-redbird.ngrok-free.app 80
 pipeline {
     agent any
 
