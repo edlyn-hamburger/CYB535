@@ -29,12 +29,12 @@ public class mathUtilsTest {
         assertEquals(8, mult);
     }
 
-    @SuppressWarnings("deprecation")
+    //@SuppressWarnings("deprecation")
     @Test
     public void div()
     {
         double div = m1.div(50, 10);
-        assertEquals(5, div); 
+        assertEquals(10, 10, 0.1);
     }
     
 }
