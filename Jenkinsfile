@@ -1,14 +1,16 @@
-//ngrok http --domain=noble-national-redbird.ngrok-free.app 80
+//ngrok http --domain=noble-national-redbird.ngrok-free.app 8080
 pipeline {
     agent any
 
-    stages {
-        stage ("use dir") {
+    stages 
+    {
+        stage ("use dir") 
+        {
             steps {
                 dir("junit_with_maven")
                 {
                     bat "mvn test"
-                    //echo "hello Im in Java"
+                    echo "hello Im in Java"
                 }
 
                 dir("PythonTests")
@@ -20,5 +22,14 @@ pipeline {
                 }
             }
         }
+
+    }
+
+    post
+    {
+         always
+         {
+            junit 
+         }   
     }
 }
